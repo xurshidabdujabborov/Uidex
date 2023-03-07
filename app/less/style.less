@@ -1,0 +1,47 @@
+@import "./params/mix";
+@import "./header.less";
+@import "./main.less";
+@import "./explore.less";
+@import "./from.less";
+@import "./footer.less";
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+p.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #42484b;
+  .md-block({
+    font-size: 15px;
+    line-height: 20px;
+  })
+}
+h2.title {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 66px;
+  color: #151515;
+  .md-block({
+    font-size: 30px;
+    line-height: 40px;
+  })
+}
+.errorMsg {
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+  display: none;
+}
+.activeBars{
+  display: none;
+  .md(display ,block);
+}
+.activeMenuBars {
+  display: block;
+  .md(display ,none);
+}
